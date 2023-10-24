@@ -1,4 +1,5 @@
 import openai
+import whisper
 import getpass
 
 # Asking user to input the API key without echoing it on the screen.
