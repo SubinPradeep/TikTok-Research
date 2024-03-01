@@ -77,12 +77,12 @@ def transcribe(video_file):
 
                 #Check video_file type
                 if ".mp4" in video_file.name:
-                    #cmd = 'find / -iname ' + ''.join(video_file.name) + ' -print -quit 2>/dev/null'
+                    cmd = 'find / -iname ' + ''.join(video_file.name) + ' -print -quit 2>/dev/null'
                     
                     # command = 'ls'
                     #result = subprocess.call("find / -iname ", + ''.join(video_file.name), + " -print -quit 2>/dev/null", shell=True)
                     # Run the command and capture the output
-                    find_file = subprocess.run("ls", capture_output=True, text=True, shell=True)
+                    find_file = subprocess.run(cmd, capture_output=True, text=True, shell=True)
 
                     # Access the output, return code, and other attributes
                     file_path = find_file.stdout
