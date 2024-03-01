@@ -8,7 +8,6 @@ import tiktoken
 from pydub import AudioSegment
 import ffmpeg
 import subprocess
-import moviepy
 import sys
 
 st.title("Tester")
